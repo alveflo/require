@@ -7,12 +7,8 @@ var require = function(script) {
 	  dataType: "script",
 	  success: function(data) {
 	  	script = data;
-	  	console.log("OK");
-	  },
-	  error: function(err) {
-	  	console.log("Error");
-	  	script = undefined;
 	  }
 	});
-  	return eval(script);
+	if (script != null)
+	  	return eval(script);
 };
