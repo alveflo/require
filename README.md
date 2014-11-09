@@ -54,3 +54,5 @@ this.prototype = {
 	</body>
 </html>
 ```
+### Licence
+MIT
