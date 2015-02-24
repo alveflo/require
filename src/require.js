@@ -7,6 +7,12 @@ var require = function(script) {
 	  dataType: "script",
 	  success: function(data) {
 	  	script = data;
+	  },
+	  error: function(err) {
+	  	if (console != null) {
+	  		console.log(err);
+	  	}
+	  	script = null;
 	  }
 	});
 	if (script != null)
